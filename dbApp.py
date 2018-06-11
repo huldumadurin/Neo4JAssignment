@@ -11,7 +11,7 @@ def connectNeo4J():
     
 #__mysqldb = connectMySQL()
 __neo4jdb = connectNeo4J()
-MAX_DEPTH = 5
+MAX_DEPTH = 4
 
 def getRandomPersonList():
     ids = []
