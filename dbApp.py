@@ -11,7 +11,7 @@ def connectNeo4J():
     
 #__mysqldb = connectMySQL()
 __neo4jdb = connectNeo4J()
-MAX_DEPTH = 4
+MAX_DEPTH = 3
 
 def getRandomPersonList():
     ids = []
@@ -93,3 +93,21 @@ print("AVERAGE")
 print(ctimes[0])
 print("MEDIAN")
 print(ctimes[1])
+
+print("\n\n\n")
+#Pretty printing
+for row in times:
+    s = ""
+    for col in row:
+        s = s + str(col) + "\t"
+    print(s)
+print("AVERAGE")
+s=""
+for col in ctimes[0]:
+    s = s + str(col) + "\t"
+print(s)
+print("MEDIAN")
+s=""
+for col in ctimes[1]:
+    s = s + str(col) + "\t"
+print(s)
